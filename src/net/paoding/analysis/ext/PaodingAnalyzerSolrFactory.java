@@ -63,10 +63,7 @@ public class PaodingAnalyzerSolrFactory extends TokenizerFactory {
     @Override    
     public void init(Map<String, String> args) {    
         super.init(args);    
-        String mode = args.get("mode");
-        if (mode != null) {
-          setMode(mode);    
-        }
+        setMode(args.get("mode"));    
     } 
     
        
